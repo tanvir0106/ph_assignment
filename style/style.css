@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,800;1,600;1,700&display=swap');
 
-* {
-    font-family: 'Mulish', sans-serif;
-}
 
-header,
-main {
-    padding: 20px 50px;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Mulish;
+
 }
 
 .button_primary {
@@ -18,75 +18,65 @@ main {
     height: 52px;
 }
 
-header .mobile-menu {
-    display: none;
-}
-
-header nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-header ul {
-    display: flex;
-    gap: 20px;
-}
-
-header ul li {
-    text-decoration: none;
-    list-style: none;
-}
-
-header ul li a {
-    text-decoration: none;
-    color: black;
-}
-
-.orange {
-    color: #FF5400;
-    font-family: Mulish;
-}
-
-.selection {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../Images/Group\ 13\ \(1\)\ \(1\).png");
-
-    background-size: 100%;
-    border-radius: 15px;
-    background-image: 100%;
-    padding: 85px 155px;
-    background-repeat: no-repeat;
-}
-
-.selection p {
-    color: #FFF;
-
+.popular_tours-content h1 {
+    color: #131318;
     text-align: center;
     font-family: Mulish;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.popular_tours-content p {
+    color: rgba(19, 19, 24, 0.70);
+    font-family: Mulish;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+.header_container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+
+    background-size: cover;
+    border-radius: 15px;
+    object-fit: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+    padding: 106px 185px;
+    margin-bottom: 70px;
+}
+
+.header_container_contex {
+    margin-bottom: 50px;
+}
+
+.header_container_contex h1 {
+    margin: 30px 30px;
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+
+}
+
+.header_container_contex p {
+    text-align: center;
+    color: white;
     font-size: 1rem;
 }
 
-.selection h1 {
-    color: #FFF;
-
-    font-family: Mulish;
-    font-size: 4rem;
-}
-
-.selection form {
-    height: 100px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.forom form {
+    text-align: center;
+    padding: 10px;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
 
 
 }
 
-.selection form input,
-.selection form select,
-.selection form button {
+.forom form input,
+.forom form select,
+.forom form button {
+    margin: 20px 50px;
     border: none;
     border-radius: 8px;
     width: 180px;
@@ -94,496 +84,48 @@ header ul li a {
     flex-shrink: 0;
 }
 
-
-
-
-
-/*-------------------------- popular_tours -------------------------------*/
+/* ---------------popular_tours---------------------- */
 .popular_tours {
     display: flex;
-    gap: 30px;
-}
-.popular_tours img{width: 100%;}
-.popular_tours .bold {
-    font-weight: bold;
-}
-
-.popular_tours h1 {
-    color: #131318;
-    align-items: top;
-    text-align: center;
-    font-family: Mulish;
-    font-size: 3.4rem;
-}
-
-.popular_tours p {
-    color: rgba(19, 19, 24, 0.70);
-
-    font-family: Mulish;
-    font-size: 1rem;
-}
-
-
-
-/* ---------------------------DESTINATION_COUNTRY----------------- */
-.destimation {
-    display: flex;
-    flex-direction: column;
-}
-
-.destimation h1 {
-    color: #131318;
-
-    text-align: center;
-    font-family: Mulish;
-    font-size: 3rem;
-}
-
-.destimation p {
-    color: rgba(19, 19, 24, 0.70);
-
-    text-align: center;
-    font-family: Mulish;
-    font-size: 1rem;
-}
-
-.destimation_images {
-
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(24, 1fr);
-    grid-template-rows: repeat(3, 0.5fr);
-}
-
-.destimation_images img {
-    width: 100%;
-}
-
-
-.Maldives {
-
-    grid-column: 1/span 12;
-    grid-row: 1/span 1;
-}
-
-.indonesia {
-
-    grid-column: 13/span 12;
-    grid-row: 1/span 1;
-}
-
-.Srilanka {
-
-    grid-column: 1/span 8;
-    grid-row: 2/span 1;
-}
-
-.America {
-
-    grid-column: 9/span 10;
-    grid-row: 2/span 1;
-}
-
-.kashmir {
-
-    grid-column: 19/span 6;
-    grid-row: 2/span 1;
-}
-
-.bangladesh-1 {
-
-    grid-column: 1/span 10;
-    grid-row: 3/span 1;
-}
-
-.bangladesh-2 {
-
-    grid-column: 11/span 14;
-    grid-row: 3/span 1;
-}
-
-.destimation_images {
-
-    position: relative;
-}
-
-.c-name {
-    margin: 70px 90px;
-    font-size: 3rem;
-    position: absolute;
-
-}
-
-.destimation_images {
-    color: #FFF;
-}
-
-/* .destimation_images h1 {
-    margin: auto;
-    color: #FFF;
-    text-align: center;
-    font-family: Mulish;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-} */
-
-/* --------------------------------------CHOOSE_US-------------- */
-.choose_us_headin h1 {
-    color: #131318;
-    align-items: top;
-    text-align: center;
-    font-family: Mulish;
-    font-size: 3.4rem;
-}
-
-.choose_us_headin p {
-    color: rgba(19, 19, 24, 0.70);
-
-    text-align: center;
-    font-family: Mulish;
-    font-size: 1rem;
-}
-
-.choose_us_headin {
-    padding 20px 150px;
-    text-align: center;
-}
-
-.choose_us_cause {
-    display: grid;
-    gap: 25px;
-    padding: 30px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2.1fr);
-}
-
-.choose_us_cause h1 {
-    font-size: 1.5rem;
-}
-
-.choose_us_cause p {
-    font-size: 1rem;
-}
-
-
-.reason-1 {
-    grid-column: 1/span 2;
-    grid-row: 1/span 1;
-    padding: 30px;
-    border-radius: 16px;
-    border: 1px solid rgba(251, 181, 99, 0.20);
-    background: rgba(251, 180, 99, 0.259);
-}
-
-.reason-2 {
-    grid-column: 3/span 2;
-    grid-row: 1/span 1;
-    padding: 30px;
-    background-color: #ADD8E6;
-    border-radius: 16px;
-}
-
-.reason-3 {
-    grid-column: 2/span 2;
-    grid-row: 2/span 1;
-    border-radius: 16px;
-    padding: 30px;
-    border: 1px solid rgba(251, 181, 99, 0.20);
-    background: rgba(251, 180, 99, 0.259);
-}
-
-/* -----------------------------------pakages-------------------------------- */
-
-.tour_plane h1 {
-    color: #131318;
-    text-align: center;
-    font-family: Mulish;
-    font-size: 3rem;
-}
-
-.tour_plane p {
-    padding: 0px 100px;
-    color: rgba(19, 19, 24, 0.70);
-    text-align: center;
-    font-family: Mulish;
-    font-size: 1rem;
-}
-
-.budget,
-.tmme-person-location li {
-    color: rgba(255, 84, 0, 1)
-}
-
-.tour_plane_content {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.tour_plan_right {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Images/Group\ 40.png);
-    background-size: 100%;
-    height: 600px;
-    background-repeat: no-repeat;
-}
-
-.tour_plan_left {
-
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Images/Group\ 39.png);
-    background-size: 100%;
-    height: 600px;
-    background-repeat: no-repeat;
-}
-
-.whitw-area {
-    margin-top: 120px;
-    margin-left: 100px;
-    background: linear-gradient(rgba(236, 240, 241, .9), rgba(236, 240, 241, .2));
-    width: 579px;
-    height: 350px;
-    flex-shrink: 0;
-    padding: 30px;
-    border-radius: 10px;
-}
-
-
-.whitw-area-rigtht {
-    margin-top: 120px;
-    margin-left: 650px;
-    background: linear-gradient(rgba(236, 240, 241, .9), rgba(236, 240, 241, .2));
-    width: 579px;
-    height: 350px;
-    flex-shrink: 0;
-    padding: 30px;
-    border-radius: 10px;
-}
-
-.tmme-person-location {
-    display: flex;
-    justify-content: space-around;
-    max-width: 500px;
-    text-align: left;
-}
-
-.tmme-person-location li {
-    text-decoration: none;
-    list-style: none;
-}
-
-.centre {
-    text-align: center;
-}
-
-/*------------------------------- video------------------------------- */
-.video-content h1 {
-    color: #131318;
-    text-align: center;
-    font-family: Mulish;
-    font-size: 2rem;
-}
-
-.video-content p {
-    color: rgba(19, 19, 24, 0.70);
-    /* text-align: center; */
-    font-family: Mulish;
-    font-size: 1rem;
-}
-
-.video {
-    margin-top: 100px;
-    display: flex;
     justify-content: space-around;
 }
 
-.video-content {
-    padding: 0 50px;
-    color: blue 48%;
-}
-
-
-
-
-
-/* --------------------NEWS-LETTER---------------- */
-.Subscribe {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.Newsletter {
-    width: 500px;
-    border-radius: 16px;
-    border: 1px solid #FF5400;
-    padding: 50px;
-}
-
-.Newsletter h1 {
-    color: #131318;
-
-
-
-    font-family: Mulish;
-    font-size: 2rem;
-}
-
-.Newsletter p {
-    color: #5A5A5D;
-
-    font-family: Mulish;
-    font-size: 1rem;
-    font-style: normal;
-}
-
-.Newsletter input {
-    margin-bottom: 10px;
-    height: 52px;
-    border-radius: 8px;
-    background: rgba(19, 19, 24, 0.05);
-}
-
-.Newsletter button {
-    color: #FFF;
-    height: 52px;
-    border-radius: 8px;
-    background: #FF5400;
-}
-
-
-
-.Subscribe form {
-
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-.Subscribe img {
+.popular_tours-conten,
+.popular_tours_poster {
     width: 100%;
 }
 
-/* ----------------FOOTER----------------- */
-
-footer {
-    margin-top: 100PX;
-    background: rgba(19, 19, 24, 0.05);
-    padding: 50px 60px;
+.popular_tours_poster img {
+    width: 100%;
+    height: 80%;
 }
 
+/* -----------------------responsiv-------------------------------- */
 
-.foot {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    margin-bottom: 50px;
-
-}
-
-.social ul {
-    display: flex;
-    gap: 50px;
-}
-
-.social ul li {
-    list-style: none;
-    font-size: 2rem;
-}
-
-.copywrite {
-    margin-top: 20px;
-    text-align: center;
-}
 
 @media screen and (max-width: 600px) {
 
-    header .mobile-menu {
-        display: flex;
+    /* ---------------header---------------------------- */
+    .forom {
+        margin-bottom: 20px;
     }
 
-
-    header ul {
-        display: none;
-    }
-
-    .selection form {
-        flex-direction: column;
-    }
-
-    header,
-    main {
-        padding: 1px 5px;
-    }
-
-    .selection {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../Images/Group\ 13\ \(1\)\ \(1\).png");
-        height: 700px;
-        background-size: 100%;
-        border-radius: 15px;
-        background-image: 100%;
-        padding: 1px 1px;
-        background-repeat: no-repeat;
-    }
-
-
-
-
-    .popular_tours {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .destimation_images,
-    .Subscribe,
-    .choose_us_cause,
-    .video {
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .whitw-area,
-    .whitw-area-rigtht {
-        margin: 100px 5px;
-
-        background: linear-gradient(rgba(236, 240, 241, .9), rgba(236, 240, 241, .2));
+    .forom form {
+        margin: auto;
+        text-align: center;
         width: 80%;
-        height: 350px;
-        flex-shrink: 0;
-        padding: 5px;
-        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
     }
 
-    .tmme-person-location {
-        font-size: 0.7rem;
-        padding: 0;
-        margin: 0;
-        word-wrap: break-word;
-        justify-content: space-around;
-        max-width: 500px;
-        text-align: left;
-    }
-
-    .Newsletter {
-       width: 70%;
-        border-radius: 16px;
-        border: 1px solid #FF5400;
-        padding: 50px;
-    }
-
-    .tour_plan_left {
-
-        background-image:  url(../Images/Group\ 39.png);
-        background-size: 100%;
-        height: 600px;
+    .header_container {
         object-fit: cover;
-        background-repeat: no-repeat;
+        width: 100%;
+        padding: 0;
+        padding-bottom: 30px;
+        margin: 0;
     }
+    /* --------------------------------------- */
+    .popular_tours{flex-direction: column;}
 
-    .video-mobile{width: 100%;}
-.video-source{width: 80%;}
 }
