@@ -269,6 +269,7 @@ h1 {
     border: 1px solid #FF5400;
     padding: 50px;
 }
+
 .Newsletter input {
     margin-top: 20px;
     margin-bottom: 10px;
@@ -279,7 +280,7 @@ h1 {
 
 .Newsletter button {
     color: #FFF;
-    height: 52px;
+    min-height: 52px;
     border-radius: 8px;
     background: #FF5400;
 }
@@ -300,13 +301,13 @@ h1 {
     gap: 20px;
 }
 
-.
+
 /* -----------------------responsiv-------------------------------- */
 
 
 @media screen and (max-width: 600px) {
 
-    /* ---------------header---------------------------- */
+
     .forom {
         margin-bottom: 20px;
     }
@@ -348,6 +349,9 @@ h1 {
         display: flex;
         flex-direction: column;
     }
+
     /* ------------------------ */
-    .Subscribe{flex-direction: column;}
+    .Subscribe {
+        flex-direction: column;
+    }
 }
