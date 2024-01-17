@@ -302,6 +302,38 @@ h1 {
 }
 
 
+footer {
+    margin-top: 100PX;
+    background: rgba(19, 19, 24, 0.05);
+    padding: 50px 60px;
+}
+
+
+.foot {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+
+.social ul {
+    display: flex;
+    gap: 50px;
+}
+
+.social ul li {
+    list-style: none;
+    font-size: 2rem;
+}
+
+.copywrite {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
 /* -----------------------responsiv-------------------------------- */
 
 
@@ -353,5 +385,8 @@ h1 {
     /* ------------------------ */
     .Subscribe {
         flex-direction: column;
+        padding: 0;
     }
+
+    
 }
